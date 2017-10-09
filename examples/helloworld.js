@@ -320,7 +320,7 @@ bot.onEvent("memberships", "created", function (trigger) {
         "I am the CUC Spark Bot. I will be providing you with information about the event. " +
         "In the mean time you can use this room to get to know your team mates.\n\n " +
         "During the event you can use me to find out useful information about the event. " +
-        "To get my attention you will need to @ me. For example try ***@CUC17 /help*** ", { "markdown":true }, function(err, message) {
+        "To get my attention you will need to @ me. For example try ***@CUC Bot /help*** ", { "markdown":true }, function(err, message) {
         if (err) {
             console.log("WARNING: could not post Hello message to room: " + trigger.data.roomId);
             return;
