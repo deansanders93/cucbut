@@ -71,7 +71,8 @@ bot.onCommand("schedule", function (command) {
         "- 12:20pm *Event Rules & Expectations*\n\n" +
         "- 12:30pm ***Challenge Begins***\n\n" +
         "*The remainder of the schedule will be released shortly including meal times and roadmap sessions. " +
-        "Look out for a message from the CUC Bot for more details.*", { "markdown":true }, function(err, message) {
+        "Look out for a message from the CUC Bot for more details. For your information we do expect that " +
+        "the challenge will be finished by 1pm on the 27th. *", { "markdown":true }, function(err, message) {
         if (err) {
             console.log("WARNING: could not post Hello message to room: " + command.message.roomId);
             return;
