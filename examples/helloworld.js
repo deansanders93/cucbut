@@ -250,7 +250,7 @@ bot.onCommand("expenses", function (command) {
     });
 });
 bot.onCommand("jamie", function (command) {
-    spark.createMessage(command.message.roomId, "***FUCK OFF***", { "markdown":true }, function(err, message) {
+    spark.createMessage(command.message.roomId, "***Is a very terrible person***", { "markdown":true }, function(err, message) {
         if (err) {
             console.log("WARNING: could not post message to room: " + command.message.roomId);
             return;
