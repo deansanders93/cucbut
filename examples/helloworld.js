@@ -92,7 +92,12 @@ bot.onCommand("schedule", function (command) {
 });
 bot.onCommand("problemstatement", function (command) {
     var email = command.message.personEmail; // Spark User that created the message orginally
-    spark.createMessage(command.message.roomId, "*TO BE ADDED*", { "markdown":true }, function(err, message) {
+    spark.createMessage(command.message.roomId, "These are problem statements provided by some areas of Cisco. You can use them " +
+        "as inspiration for your project today. You will get a TOI on them in the first morning. \n\n" +
+        "**SWIFT**\n\n" +
+        "*info to go here.*\n\n" +
+        "**Frictionless Retail**\n\n" +
+        "*info to go here*", { "markdown":true }, function(err, message) {
         if (err) {
             console.log("WARNING: could not post Hello message to room: " + command.message.roomId);
             return;
@@ -286,7 +291,7 @@ bot.onCommand("expenses", function (command) {
     });
 });
 bot.onCommand("jamie", function (command) {
-    spark.createMessage(command.message.roomId, "***Is a very terrible person***", { "markdown":true }, function(err, message) {
+    spark.createMessage(command.message.roomId, "***Is a very terrible person for not being here***", { "markdown":true }, function(err, message) {
         if (err) {
             console.log("WARNING: could not post message to room: " + command.message.roomId);
             return;
@@ -322,7 +327,18 @@ bot.onCommand("jobs", function (command) {
     });
 });
 bot.onCommand("speakers", function (command) {
-    spark.createMessage(command.message.roomId, "Keynote speaker profiles will be available shortly. \n\n", { "markdown":true }, function(err, message) {
+    spark.createMessage(command.message.roomId, "Our speakers will talk to you about some of our problem statements, and available technologies" +
+        "before the challenge gets under way. Here is a little bit about each of them. \n\n" +
+        "**Esther Roure Vila**\n\n" +
+        "*bio here*\n\n" +
+        "**Richard Osbourne**\n\n" +
+        "*bio here*\n\n" +
+        "**Cory Gyunn**\n\n" +
+        "*bio here*\n\n" +
+        "**Matt Johnson**\n\n" +
+        "*bio here*\n\n" +
+        "**Bob Garland**\n\n" +
+        "*bio here*", { "markdown":true }, function(err, message) {
         if (err) {
             console.log("WARNING: could not post message to room: " + command.message.roomId);
             return;
