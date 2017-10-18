@@ -89,9 +89,7 @@ bot.onCommand("schedule", function (command) {
         "*Each University should wait to be called by the CUC team. Rough timings will be published shortly!*\n\n" +
         "- 12:00 **The Final 3!** *The three top teams will present their work on stage!*\n\n" +
         "- 12:45pm *Closing Remarks and Photos and we announce the WINNER of #CiscoUC17*\n\n" +
-        "*The remainder of the schedule will be released shortly including meal times and roadmap sessions. " +
-        "Look out for a message from the CUC Bot for more details. For your information we do expect that " +
-        "the challenge will be finished by 1:15pm on the 27th. *", { "markdown":true }, function(err, message) {
+        "*We expect to be finished no later than 1:15.* ", { "markdown":true }, function(err, message) {
         if (err) {
             console.log("WARNING: could not post Hello message to room: " + command.message.roomId);
             return;
