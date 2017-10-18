@@ -58,7 +58,7 @@ bot.onCommand("fallback", function (command) {
 bot.onCommand("schedule", function (command) {
     var email = command.message.personEmail; // Spark User that created the message orginally
     spark.createMessage(command.message.roomId, "***Schedule***     *Note that this is subject to change*\n\n" +
-        "***Thursday 26th October***\n\n" +
+        "**Thursday 26th October**\n\n" +
         "- 08:30am *Registration and Breakfast*\n\n" +
         "- 09:30am *Participants to be seated*\n\n" +
         "*Speakers*" +
@@ -76,10 +76,14 @@ bot.onCommand("schedule", function (command) {
         "*To find your lunch sitting ask the bot.* ***@CUC /mealtimes***\n\n" +
         "- 7:30pm *Evening Meal - THis will be served in the VEC Foyer*\n\n" +
         "- 8:00pm *HR Dropin Sessions*\n\n" +
-        "- 9:00pm *Roadmap Sessions - See the big screen or the spark bot for your time slot\n\n" +
+        "- 9:00pm *Roadmap Sessions - See the big screen or the spark bot for your time slot*\n\n" +
+        "*Snacks and drinks will be available throughout the night in the VEC corridor*\n\n" +
+        "**Friday 27th October***\n\n" +
+        "*TO BE CONFIRMED SHORTLY*\n\n" +
+        "- 12:45pm *Closing Remarks and Photos*\n\n" +
         "*The remainder of the schedule will be released shortly including meal times and roadmap sessions. " +
         "Look out for a message from the CUC Bot for more details. For your information we do expect that " +
-        "the challenge will be finished by 1pm on the 27th. *", { "markdown":true }, function(err, message) {
+        "the challenge will be finished by 1:15pm on the 27th. *", { "markdown":true }, function(err, message) {
         if (err) {
             console.log("WARNING: could not post Hello message to room: " + command.message.roomId);
             return;
