@@ -210,7 +210,28 @@ bot.onCommand("links", function (command) {
     });
 });
 bot.onCommand("roadmap", function (command) {
-    spark.createMessage(command.message.roomId, "The schedule for the roadmap sessions will be published shortly.", { "markdown":true }, function(err, message) {
+    spark.createMessage(command.message.roomId, "Roadmap sessions are your oppurtunity to talk to a mentor and get feedback on your idea and work so far. The timings for these sessions are below:\n\n" +
+        "*Room 1 - Hummingbird*\n\n" +
+        "- 9:00pm - UNI 1\n\n" +
+        "- 9:20pm - UNI 2\n\n" +
+        "- 9:30pm - UNI 3" +
+        "*Room 2 - Heron*\n\n" +
+        "- 9:00pm - UNI 1\n\n" +
+        "- 9:20pm - UNI 2\n\n" +
+        "- 9:40pm - UNI 3" +
+        "*Room 3 - Hawk*\n\n" +
+        "- 9:00pm - UNI 1\n\n" +
+        "- 9:20pm - UNI 2\n\n" +
+        "- 9:40pm - UNI 3" +
+        "*Room 4 - Bullfinch*\n\n" +
+        "- 9:00pm - UNI 1\n\n" +
+        "- 9:20pm - UNI 2\n\n" +
+        "- 9:40pm - UNI 3" +
+        "*Room 5 - TBC*\n\n" +
+        "- 9:00pm - UNI 1\n\n" +
+        "- 9:20pm - UNI 2\n\n" +
+        "- 9:40pm - UNI 3\n\n" +
+        "", { "markdown":true }, function(err, message) {
         if (err) {
             console.log("WARNING: could not post message to room: " + command.message.roomId);
             return;
