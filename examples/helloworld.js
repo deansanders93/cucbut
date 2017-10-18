@@ -70,6 +70,7 @@ bot.onCommand("schedule", function (command) {
         "- 11:35am *Speaker 4: DevNet TOI - Matt Johnson*\n\n" +
         "- 12:05am *Speaker 5 Frictionless Retail TOI - Bob Garland*\n\n" + +
         "- 12:35pm *Event Rules & Expectations*\n\n" +
+
         "**Challenge Begins @ 12:45**" +
         "- 1:00pm *Lunch - 1st Sitting*\n\n" +
         "- 1:30pm *Lunch - 2nd Sitting*\n\n" +
