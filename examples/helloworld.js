@@ -87,7 +87,7 @@ bot.onCommand("schedule", function (command) {
         "- 9:30am *Intern & Grad Panel*\n\n" +
         "- 10:00am **JUDGING BEGINS**\n\n" +
         "*Each University should wait to be called by the CUC team. Rough timings will be published shortly!*\n\n" +
-        "- 12:00 **The final 3** *The three top teams will present their work on stage!*\n\n" +
+        "- 12:00 **The Final 3!** *The three top teams will present their work on stage!*\n\n" +
         "- 12:45pm *Closing Remarks and Photos and we announce the WINNER of #CiscoUC17*\n\n" +
         "*The remainder of the schedule will be released shortly including meal times and roadmap sessions. " +
         "Look out for a message from the CUC Bot for more details. For your information we do expect that " +
