@@ -85,7 +85,7 @@ bot.onCommand("schedule", function (command) {
         "*Breakfast sittings are the same as yesterdays lunch sitting. @CUC /mealtimes if you are not sure.* \n\n" +
         "- 9:30am **Times Up! The challenge is over**\n\n" +
         "- 9:30am *Intern & Grad Panel*\n\n" +
-        "- 10:00am **JUDGING BEGINS**\n\n" +
+        "- 10:00am **JUDGING BEGINS** " +
         "*Each University should wait to be called by the CUC team. Rough timings will be published shortly!*\n\n" +
         "- 12:00 **The Final 3!** *The three top teams will present their work on stage!*\n\n" +
         "- 12:45pm *Closing Remarks and Photos and we announce the WINNER of #CiscoUC17*\n\n" +
