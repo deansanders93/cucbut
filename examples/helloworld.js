@@ -84,6 +84,35 @@ bot.onCommand("schedule", function (command) {
         }
     });
 });
+bot.onCommand("schedule2", function (command) {
+    var email = command.message.personEmail; // Spark User that created the message orginally
+    spark.createMessage(command.message.roomId, "***Schedule***     *Note that this is subject to change*\n\n" +
+        "***Thursday 26th October***\n\n" +
+        "- 08:30am *Registration and Breakfast*\n\n" +
+        "- 09:30am *Participants to be seated*\n\n" +
+        "- 09:30am *Health, Safety and Security*\n\n" +
+        "- 09:40am *Welcome and Introductions*\n\n" +
+        "- 10:10am *Keynote 1: Esther Roure Vila*\n\n" +
+        "- 10:40am *Speaker 2: SWIFT TOI - Richard Osbourne*\n\n" +
+        "- 11:10am *Speaker 3: Meraki TOI - Cory Guynn*\n\n" +
+        "- 11:35am *Speaker 4: DevNet TOI - Matt Johnson*\n\n" +
+        "- 12:05am *Speaker 5 Frictionless Retail TOI - Bob Garland*\n\n" + +
+        "- 12:35pm *Event Rules & Expectations*\n\n" +
+        "- 1:00pm *Lunch - 1st Sitting*\n\n" +
+        "- 1:30pm *Lunch - 2nd Sitting*\n\n" +
+        "*To find your lunch sitting ask the bot.* ***@CUC /mealtimes***\n\n" +
+        "- 7:30pm *Evening Meal - THis will be served in the VEC Foyer*\n\n" +
+        "- 8:00pm *HR Dropin Sessions*\n\n" +
+        "- 9:00pm *Roadmap Sessions - See the big screen or the spark bot for your time slot\n\n" +
+        "*The remainder of the schedule will be released shortly including meal times and roadmap sessions. " +
+        "Look out for a message from the CUC Bot for more details. For your information we do expect that " +
+        "the challenge will be finished by 1pm on the 27th. *", { "markdown":true }, function(err, message) {
+        if (err) {
+            console.log("WARNING: could not post Hello message to room: " + command.message.roomId);
+            return;
+        }
+    });
+});
 bot.onCommand("problemstatement", function (command) {
     var email = command.message.personEmail; // Spark User that created the message orginally
     spark.createMessage(command.message.roomId, "*TO BE ADDED*", { "markdown":true }, function(err, message) {
