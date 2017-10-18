@@ -78,7 +78,7 @@ bot.onCommand("schedule", function (command) {
         "- 8:00pm *HR Dropin Sessions*\n\n" +
         "- 9:00pm *Roadmap Sessions - See the big screen or the spark bot for your time slot*\n\n" +
         "*Snacks and drinks will be available throughout the night in the VEC corridor*\n\n" +
-        "**Friday 27th October***\n\n" +
+        "**Friday 27th October**\n\n" +
         "- **DEADLINE 7:00am** *Your project document must be submitted by email to university-challenge@cisco.com.*\n\n " +
         "- 8:30am *Breakfast Sitting 1*\n\n" +
         "- 9:00am *Breakfast Sitting 2*\n\n" +
