@@ -79,13 +79,13 @@ bot.onCommand("schedule", function (command) {
         "- 9:00pm *Roadmap Sessions - See the big screen or the spark bot for your time slot*\n\n" +
         "*Snacks and drinks will be available throughout the night in the VEC corridor*\n\n" +
         "**Friday 27th October***\n\n" +
-        "- **DEADLINE 7:00am** *Your project document must be submitted by email to university-challenge@cisco.com.\n\n " +
+        "- **DEADLINE 7:00am** *Your project document must be submitted by email to university-challenge@cisco.com.*\n\n " +
         "- 8:30am *Breakfast Sitting 1*\n\n" +
         "- 9:00am *Breakfast Sitting 2*\n\n" +
-        "*Breakfast sittings are the same as yesterdays lunch sitting. @CUC /mealtimes if you are not sure. \n\n" +
+        "*Breakfast sittings are the same as yesterdays lunch sitting. @CUC /mealtimes if you are not sure.* \n\n" +
         "- 9:30am **Times Up! The challenge is over**\n\n" +
         "- 9:30am *Intern & Grad Panel*\n\n" +
-        "- 10:00am **JUDGING BEGINS**" +
+        "- 10:00am **JUDGING BEGINS**\n\n" +
         "*Each University should wait to be called by the CUC team. Rough timings will be published shortly!*\n\n" +
         "- 12:00 **The final 3** *The three top teams will present their work on stage!*\n\n" +
         "- 12:45pm *Closing Remarks and Photos and we announce the WINNER of #CiscoUC17*\n\n" +
