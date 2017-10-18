@@ -214,24 +214,24 @@ bot.onCommand("roadmap", function (command) {
         "*Room 1 - Hummingbird*\n\n" +
         "- 9:00pm - UNI 1\n\n" +
         "- 9:20pm - UNI 2\n\n" +
-        "- 9:30pm - UNI 3" +
+        "- 9:30pm - UNI 3\n\n" +
         "*Room 2 - Heron*\n\n" +
         "- 9:00pm - UNI 1\n\n" +
         "- 9:20pm - UNI 2\n\n" +
-        "- 9:40pm - UNI 3" +
+        "- 9:40pm - UNI 3\n\n" +
         "*Room 3 - Hawk*\n\n" +
         "- 9:00pm - UNI 1\n\n" +
         "- 9:20pm - UNI 2\n\n" +
-        "- 9:40pm - UNI 3" +
+        "- 9:40pm - UNI 3\n\n" +
         "*Room 4 - Bullfinch*\n\n" +
         "- 9:00pm - UNI 1\n\n" +
         "- 9:20pm - UNI 2\n\n" +
-        "- 9:40pm - UNI 3" +
+        "- 9:40pm - UNI 3\n\n" +
         "*Room 5 - TBC*\n\n" +
         "- 9:00pm - UNI 1\n\n" +
         "- 9:20pm - UNI 2\n\n" +
         "- 9:40pm - UNI 3\n\n" +
-        "", { "markdown":true }, function(err, message) {
+        "*These times are indicative. A member of the CUC team will get you when we are ready for you.", { "markdown":true }, function(err, message) {
         if (err) {
             console.log("WARNING: could not post message to room: " + command.message.roomId);
             return;
