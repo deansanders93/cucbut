@@ -350,7 +350,7 @@ bot.onCommand("kitlist", function (command) {
         "This includes devices like Arduinos, Raspberry Pi's and all sorts of sensors. \n\n" +
         "You can borrow this kit from the desk at the from of the room.\n\n" +
         "*Please be aware that when borrowing kit you will need to leave your ID with us. " +
-        "Any items you borrow are the responsibility of the person who signs it out.", { "markdown":true }, function(err, message) {
+        "Any items you borrow are the responsibility of the person who signs it out.*", { "markdown":true }, function(err, message) {
         if (err) {
             console.log("WARNING: could not post message to room: " + command.message.roomId);
             return;
