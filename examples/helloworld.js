@@ -370,7 +370,7 @@ bot.onCommand("expenses", function (command) {
         "1. The above form is an example which you can follow.\n\n" +
         "2. Please **only replace text in red**\n\n" +
         "3. Please print your sheet off and **then scan this file in - attach this scan to the email.**\n\n" +
-        "4. Each receipt, *please scan in and attach as a file onto the email*.\n\n" +
+        "4. Each receipt, **please scan in and attach as a file onto the email**.\n\n" +
         "5. Email this to **624-uk-ap@cisco.com - Use the subject 'Cisco University Challenge 2017 Expenses YOUR NAME**\n\n" +
         "6. Please copy university-challenge@cisco.com. - This enables us to track your expense claim. \n\n" +
         "7. Expenses can take up to 5 weeks to process.  ", { "markdown":true }, function(err, message) {
