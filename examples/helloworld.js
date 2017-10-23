@@ -32,9 +32,11 @@ bot.onCommand("help", function (command) {
         "***/menu*** *to see the food menu for this evening* \n\n" +
         "***/problemstatement*** *Get some inspiration and solve a real world problem!*\n\n" +
         "***/process*** *Get a step by step of whats going to happen at CUC17*\n\n" +
+        "***/retail*** *Find out more about the retail problem statements*\n\n" +
         "***/roadmap*** *find out more about the roadmap sessions and what time your slot is*\n\n" +
         "***/schedule*** *to see the schedule for today* \n\n" +
 	    "***/speakers*** *Find out more about our keynote speakers* \n\n" +
+        "***/SWIFT1 & /SWIFT2*** *Find out about the SWIFT problem statement*\n\n" +
         "***/travel*** *Advice on getting to Bedfont Lakes* ", { "markdown":true }, function(err, message) {
         if (err) {
             console.log("WARNING: could not post message to room: " + command.message.roomId);
@@ -73,9 +75,9 @@ bot.onCommand("schedule", function (command) {
         "- 1:00pm *Lunch - 1st Sitting*\n\n" +
         "- 1:30pm *Lunch - 2nd Sitting*\n\n" +
         "*To find your lunch sitting ask the bot.* ***@CUC /mealtimes***\n\n" +
+        "- 6:00pm *HR Dropin Sessions*\n\n" +
         "- 7:30pm *Evening Meal - THis will be served in the VEC Foyer*\n\n" +
-        "- 8:00pm *HR Dropin Sessions*\n\n" +
-        "- 9:00pm *Roadmap Sessions - See the big screen or the spark bot for your time slot*\n\n" +
+        "- 8:00pm *Roadmap Sessions - See the big screen or the spark bot for your time slot*\n\n" +
         "*Snacks and drinks will be available throughout the night in the VEC corridor*\n\n" +
         "**Friday 27th October**\n\n" +
         "- **DEADLINE 7:00am** *Your project document must be submitted by email to university-challenge@cisco.com.*\n\n " +
@@ -98,11 +100,90 @@ bot.onCommand("schedule", function (command) {
 bot.onCommand("problemstatement", function (command) {
     var email = command.message.personEmail; // Spark User that created the message orginally
     spark.createMessage(command.message.roomId, "These are problem statements provided by some areas of Cisco. You can use them " +
-        "as inspiration for your project today. You will get a TOI on them in the first morning. \n\n" +
-        "**SWIFT**\n\n" +
-        "*info to go here.*\n\n" +
-        "**Frictionless Retail**\n\n" +
-        "*info to go here*", { "markdown":true }, function(err, message) {
+        "as inspiration for your project today. You will get a TOI on them in the first morning.\n\n" +
+        "To read more about the SWIFT problem statement type @CUC /SWIFT1 or @CUC /SWIFT2. \n\n" +
+        "To read more about the retail problem statement type @CUC /retail" +
+        "Remember, you dont have to use these, you are more than welcome to come up with your own p" +
+        "roblem statement!", { "markdown":true }, function(err, message) {
+        if (err) {
+            console.log("WARNING: could not post Hello message to room: " + command.message.roomId);
+            return;
+        }
+    });
+});
+bot.onCommand("SWIFT1", function (command) {
+    var email = command.message.personEmail; // Spark User that created the message orginally
+    spark.createMessage(command.message.roomId, "**SWIFT Problem Statement 1** Onboard Marketing\n\n" +
+        "Passengers present a substantial customer base for activities, services and products offered at the destinations." +
+        " It is known, however, that limited or inaccurate information provided to passengers regarding their travel " +
+        "destinations can hamper their experience and limit awareness of the opportunities. At the other end of the spectrum, " +
+        "appropriately tailored information relevant to the context of a particular journey and passenger preferences " +
+        "can lead to greater customer engagement and spend, therefore generating new revenue opportunities.\n\n" +
+        "The ultimate aim should be to considerably improve passenger experience while also demonstrating " +
+        "commercial benefits to the vendors and a train operator.\n\n" +
+        " While we invite a broad set of applications, we particularly encourage solutions which focus on or " +
+        "incorporate elements which can demonstrably facilitate passenger engagement and spend on tourism-related " +
+        "activities and services. The proposed innovations should clearly align with the national " +
+        "Scottish tourism strategy and its objectives:\n\n" +
+        "- To grow visitor spend by £1bn from £4.5 to £5.5bn by 2020.\n\n" +
+        "- To increase the advocacy score for Scotland from 25%.\n\n" +
+        "- To increase average visitor spend from £358.56.\n\n" +
+        "- To increase the total tourism employment figures from 185,100.\n\n" +
+        "- To increase total tourism turnover from £6,221m. \n\n" +
+        "The crucial requirement is demonstration of solutions which emphasise the need for low-latency & " +
+        "high-bandwidth connectivity which should enable innovations beyond the ones currently " +
+        "encountered in the rail industry.", { "markdown":true }, function(err, message) {
+        if (err) {
+            console.log("WARNING: could not post Hello message to room: " + command.message.roomId);
+            return;
+        }
+    });
+});
+bot.onCommand("SWIFT2", function (command) {
+    var email = command.message.personEmail; // Spark User that created the message orginally
+    spark.createMessage(command.message.roomId, "**SWIFT Problem Statement 2** Data services for improved management during disruptions\n\n" +
+        "Efficient management and customer handling are crucial during periods of service disruptions. " +
+        "Each minute of on-train time on a delayed service can count as much as four minutes of a regular journey, " +
+        "and up to six if the journey is to an airport. Not only does it lead to worsening passenger experience and " +
+        "therefore ridership loss, but has very immediate and direct financial consequences. In 2016 £45m was paid out " +
+        "for late running trains across the UK in the form of refunds. The proportion of passenger claiming their " +
+        "refund will continue to increase as policies and technologies facilitating automated refunds are introduced.\n\n" +
+        "At the same time, strategies and tools enabling effective informing and alternative service delivery can " +
+        "not only maintain but also increase passenger satisfaction, ensure their safety, and minimise costs to " +
+        "the operators, both in terms of the compensations as well as short- and long-term revenue loss.\n\n" +
+        "In this challenge we invite proposals which demonstrate innovative ways of using Project SWIFT data feeds " +
+        "which can facilitate management of during disruptions of rail services, including recovery from disruptions. " +
+        "We particularly encourage applications which address one or more of the following aspects of management:\n\n" +
+        "- Passenger information and advisory\n\n" +
+        "- Staff productivity\n\n" +
+        "- Staff and resource allocation & deployment\n\n" +
+        "- Safety & security for passenger & staff\n\n" +
+        "The crucial requirement is demonstration of solutions which emphasise the need for low-latency & " +
+        "high-bandwidth connectivity which should enable innovations beyond the ones currently " +
+        "encountered in the rail industry.", { "markdown":true }, function(err, message) {
+        if (err) {
+            console.log("WARNING: could not post Hello message to room: " + command.message.roomId);
+            return;
+        }
+    });
+});
+bot.onCommand("retail", function (command) {
+    var email = command.message.personEmail; // Spark User that created the message orginally
+    spark.createMessage(command.message.roomId, "**Retail Problem Statement 1 - Frictionless Retail**\n\n" +
+        "Imagine recreating Amazon Go, or elements of it. Re-inventing the Customer Experience of shopping with the " +
+        "concept of simply walking into a store, grabbing what you want and walking out again. All payments are " +
+        "automatic and no POS are required. Aside from the benefit to the customer experience, this also reduces the " +
+        "retailers staffing costs as it minimises the resources required at the POS. This will require a " +
+        "lot of AI/ML & the application of Data-Science to determine what has been purchased and by who.\n\n" +
+        "**Retail Problem Statement 2 - Store Automation**\n\n" +
+        "UK retailers are facing the double whammy of the productivity plateau (flat since 2008) and the impact of " +
+        "the National Living Wage. This combination is driving up their labour costs while they whilst they are " +
+        "facing more competition from online retail (which doesn’t have the same overheads or labour cost base). " +
+        "Margins in some sectors like grocery, are already very low (~5%) so they will have to be more productive or " +
+        "face going out of business. Digital technology in store offers the ability to automate processes – " +
+        "e.g. stock taking video (or robots), application of ML to tasks like improving On-Shelf Availability, " +
+        "customer self-service, optimising supply-chain and deliveries, signage, " +
+        "ESL, RFID, etc.", { "markdown":true }, function(err, message) {
         if (err) {
             console.log("WARNING: could not post Hello message to room: " + command.message.roomId);
             return;
@@ -228,25 +309,26 @@ bot.onCommand("links", function (command) {
 bot.onCommand("roadmap", function (command) {
     spark.createMessage(command.message.roomId, "Roadmap sessions are your oppurtunity to talk to a mentor and get feedback on your idea and work so far. The timings for these sessions are below:\n\n" +
         "*Room 1 - Hummingbird*\n\n" +
-        "- 9:00pm - UNI 1\n\n" +
-        "- 9:20pm - UNI 2\n\n" +
-        "- 9:30pm - UNI 3\n\n" +
+        "- 8:00pm - Bath\n\n" +
+        "- 8:30pm - Imperial\n\n" +
+        "- 9:00pm - Plymouth\n\n" +
         "*Room 2 - Heron*\n\n" +
-        "- 9:00pm - UNI 1\n\n" +
-        "- 9:20pm - UNI 2\n\n" +
-        "- 9:40pm - UNI 3\n\n" +
+        "- 8:00pm - Bournemouth\n\n" +
+        "- 8:30pm - Kent\n\n" +
+        "- 9:00pm - Royal Holloway 1\n\n" +
         "*Room 3 - Hawk*\n\n" +
-        "- 9:00pm - UNI 1\n\n" +
-        "- 9:20pm - UNI 2\n\n" +
-        "- 9:40pm - UNI 3\n\n" +
+        "- 8:00pm - Glasgow 1 \n\n" +
+        "- 8:30pm - Liverpool\n\n" +
+        "- 9:00pm - Royal Holloway 2\n\n" +
+        "- 9:30pm - UCL 2" +
         "*Room 4 - Bullfinch*\n\n" +
-        "- 9:00pm - UNI 1\n\n" +
-        "- 9:20pm - UNI 2\n\n" +
-        "- 9:40pm - UNI 3\n\n" +
-        "*Room 5 - TBC*\n\n" +
-        "- 9:00pm - UNI 1\n\n" +
-        "- 9:20pm - UNI 2\n\n" +
-        "- 9:40pm - UNI 3\n\n" +
+        "- 8:00pm - Glasgow 2\n\n" +
+        "- 8:30pm - London Met\n\n" +
+        "- 9:00pm - Sheffield\n\n" +
+        "*Room 5 - Blackcap*\n\n" +
+        "- 8:00pm - Teesside\n\n" +
+        "- 8:30pm - UCL 1\n\n" +
+        "- 9:00pm - Warwick\n\n" +
         "*These times are indicative. A member of the CUC team will get you when we are ready for you.", { "markdown":true }, function(err, message) {
         if (err) {
             console.log("WARNING: could not post message to room: " + command.message.roomId);
