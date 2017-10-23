@@ -365,7 +365,7 @@ bot.onCommand("travel", function (command) {
 });
 bot.onCommand("expenses", function (command) {
     spark.createMessage(command.message.roomId, "**Expenses Information** \n\n" +
-        "- [EXPENSE FORM](null)\n\n" +
+        "- [EXPENSE FORM](https://cisco.box.com/s/nfbdkn7daef8vm5rywm0g5igtn9p21jj)\n\n" +
         "**IMPORTANT** - ***Please makre sure you read the following carefully**\n'n" +
         "1. The above form is an example which you can follow.\n\n" +
         "2. Please **only replace text in red**\n\n" +
