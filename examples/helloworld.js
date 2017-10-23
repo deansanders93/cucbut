@@ -433,13 +433,13 @@ bot.onCommand("speakers", function (command) {
         "Cory is a pioneer in cloud computing and Internet of Things technology.\n\n" +
         "As a veteran Meraki Systems Engineer, he has experience in networks across all industries. " +
         "His current passion is leveraging APIs to extend the power of networking and architecting solutions.\n\n" +
-        "**Matt Johnson**\n\n" +
+        "**Matt Johnson** - *Developer Evangelist, DEVNET*\n\n" +
         "UK based, and now in his fifth year with Cisco. Matt has spent most of his life at the coal-face of IT operations, " +
         "pushing an agenda of automation, infrastructure as code and repeatability; which form some of the founding principles of the DevOps movement. \n\n" +
         "Working within Cisco’s DEVNET organisation as a Developer Evangelist, he takes this experience to promote " +
         "modern development and operations practices to customers, partners and staff alike. When not sat behind a " +
         "heavily stickered laptop, he enjoys motorsports, rugby, photography, shooting and his growing collection of single malt.\n\n" +
-        "**Bob Garland**\n\n" +
+        "**Bob Garland** - *Retail Solutions Architect*\n\n" +
         "Bob is a Solutions Architect working with major UK Retail customers on addressing their business challenges " +
         "and opportunities with technology. With over 25 years IT experience working for Cisco, IBM, and CSC, " +
         "he currently works with customers to develop retail business solutions covering Cloud, Mobility, IoT, " +
