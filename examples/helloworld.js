@@ -320,7 +320,7 @@ bot.onCommand("roadmap", function (command) {
         "- 8:00pm - Glasgow 1 \n\n" +
         "- 8:30pm - Liverpool\n\n" +
         "- 9:00pm - Royal Holloway 2\n\n" +
-        "- 9:30pm - UCL 2" +
+        "- 9:30pm - UCL 2\n\n" +
         "*Room 4 - Bullfinch*\n\n" +
         "- 8:00pm - Glasgow 2\n\n" +
         "- 8:30pm - London Met\n\n" +
@@ -416,16 +416,36 @@ bot.onCommand("jobs", function (command) {
 bot.onCommand("speakers", function (command) {
     spark.createMessage(command.message.roomId, "Our speakers will talk to you about some of our problem statements, and available technologies" +
         "before the challenge gets under way. Here is a little bit about each of them. \n\n" +
-        "**Esther Roure Vila**\n\n" +
-        "*bio here*\n\n" +
-        "**Richard Osbourne**\n\n" +
-        "*bio here*\n\n" +
-        "**Cory Gyunn**\n\n" +
-        "*bio here*\n\n" +
+        "**Esther Roure Vila** - *Service Advisor*\n\n" +
+        "Esther joined Cisco Technical Services as a graduate in 2007, working in R&S, Storage, " +
+        "and Data Center, obtaining two CCIE, and is currently working as Service Advisor for Global Service " +
+        "Provider and Innovation Ambassador. Freshly Executive MBA graduated. \n\n" +
+        "She is driving the Cisco Transformation to New Business Models and is passionate about bridging the gap " +
+        "between Business and Technology. Involved in Inclusion and Collaboration Initiative and 2014 " +
+        "European Digital Woman of the Year™ Award.\n\n " +
+        "**Richard Osbourne** - *Enterprise Architect*\n\n" +
+        "Richard has worked for Cisco, for 19 years, in technical, consultancy and business development roles and is " +
+        "now an Enterprise Architect, with a primary focus on Rail.\n\n" +
+        "Cisco’s primary achievement of those 19 years has been in delivering high speed Internet access to everyone, " +
+        "everywhere.  Well, almost….  so now, Richard’s passion is to get trains connected: the last bastion of an unconnected world.\n\n" +
+        "In his spare time, Richard “5 sheds” Osborne has a wife and two young children and spends his spare time tinkering with power tools in the garden.\n\n" +
+        "**Cory Gyunn** - *Solutions Architect, Meraki*\n\n" +
+        "Cory is a pioneer in cloud computing and Internet of Things technology.\n\n" +
+        "As a veteran Meraki Systems Engineer, he has experience in networks across all industries. " +
+        "His current passion is leveraging APIs to extend the power of networking and architecting solutions.\n\n" +
         "**Matt Johnson**\n\n" +
-        "*bio here*\n\n" +
+        "UK based, and now in his fifth year with Cisco. Matt has spent most of his life at the coal-face of IT operations, " +
+        "pushing an agenda of automation, infrastructure as code and repeatability; which form some of the founding principles of the DevOps movement. \n\n" +
+        "Working within Cisco’s DEVNET organisation as a Developer Evangelist, he takes this experience to promote " +
+        "modern development and operations practices to customers, partners and staff alike. When not sat behind a " +
+        "heavily stickered laptop, he enjoys motorsports, rugby, photography, shooting and his growing collection of single malt.\n\n" +
         "**Bob Garland**\n\n" +
-        "*bio here*", { "markdown":true }, function(err, message) {
+        "Bob is a Solutions Architect working with major UK Retail customers on addressing their business challenges " +
+        "and opportunities with technology. With over 25 years IT experience working for Cisco, IBM, and CSC, " +
+        "he currently works with customers to develop retail business solutions covering Cloud, Mobility, IoT, " +
+        "Analytics, Collaboration and Software Defined Networks.\n\n" +
+        "Bob has mentored start-ups in IDEAL London and Mi-IDEA, Cisco’s post-accelerators, to develop their " +
+        "technology, leverage Cisco and evangelise the benefits of innovation with customers. ", { "markdown":true }, function(err, message) {
         if (err) {
             console.log("WARNING: could not post message to room: " + command.message.roomId);
             return;
