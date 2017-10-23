@@ -364,13 +364,16 @@ bot.onCommand("travel", function (command) {
     });
 });
 bot.onCommand("expenses", function (command) {
-    spark.createMessage(command.message.roomId, "The expenses form will be available shortly. \n\n" +
+    spark.createMessage(command.message.roomId, "**Expenses Information** \n\n" +
         "- [EXPENSE FORM](null)\n\n" +
-        "*PLEASE NOTE: You must fill in your expense form by hand. Typed copies will not be accepted." +
-        " You must include receipts/tickets for all parts of your journey that you are claiming for, " +
-        "failure to provide receipts will delay your claim and you may not be reimbursed. If you would like " +
-        "to submit your form today please speak to a member of the team on Thursday evening and we can take " +
-        "a copy of your travel receipts* ", { "markdown":true }, function(err, message) {
+        "**IMPORTANT** - ***Please makre sure you read the following carefully**\n'n" +
+        "1. The above form is an example which you can follow.\n\n" +
+        "2. Please **only replace text in red**\n\n" +
+        "3. Please print your sheet off and **then scan this file in - attach this scan to the email.**\n\n" +
+        "4. Each receipt, *please scan in and attach as a file onto the email*.\n\n" +
+        "5. Email this to **624-uk-ap@cisco.com - Use the subject 'Cisco University Challenge 2017 Expenses YOUR NAME**\n\n" +
+        "6. Please copy university-challenge@cisco.com. - This enables us to track your expense claim. \n\n" +
+        "7. Expenses can take up to 5 weeks to process.  ", { "markdown":true }, function(err, message) {
         if (err) {
             console.log("WARNING: could not post message to room: " + command.message.roomId);
             return;
