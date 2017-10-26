@@ -302,6 +302,7 @@ bot.onCommand("links", function (command) {
         "- [Devnet](http://cisco.devnet.com)" +
         "- [Postman](https://www.getpostman.com/)" +
         "- [Meraki Postman COllection](http://developers.meraki.com/post/157014824756/dashboard-api-postman-collection)" +
+        "- [Meraki Spark Room](https://eurl.io/#HJQnd7yRZ)" +
         "- [Internet of Lego](https://www.internetoflego.com)" +
         "- [Node Red](https://nodered.org/)", { "markdown":true }, function(err, message) {
         if (err) {
