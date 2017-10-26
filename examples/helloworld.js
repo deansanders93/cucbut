@@ -299,12 +299,12 @@ bot.onCommand("gethelp", function (command) {
 });
 bot.onCommand("links", function (command) {
     spark.createMessage(command.message.roomId, "Here are some useful links that might help you with your work. \n\n" +
-        "- [Devnet](http://cisco.devnet.com)" +
-        "- [Postman](https://www.getpostman.com/)" +
-        "- [Meraki Postman COllection](http://developers.meraki.com/post/157014824756/dashboard-api-postman-collection)" +
-        "- [Meraki Spark Room](https://eurl.io/#HJQnd7yRZ)" +
-        "- [Internet of Lego](https://www.internetoflego.com)" +
-        "- [Node Red](https://nodered.org/)" +
+        "- [Devnet](http://cisco.devnet.com)\n\n" +
+        "- [Postman](https://www.getpostman.com/)\n\n" +
+        "- [Meraki Postman COllection](http://developers.meraki.com/post/157014824756/dashboard-api-postman-collection)\n\n" +
+        "- [Meraki Spark Room](https://eurl.io/#HJQnd7yRZ)\n\n" +
+        "- [Internet of Lego](https://www.internetoflego.com)\n\n" +
+        "- [Node Red](https://nodered.org/)\n\n" +
         "- [Cisco Spark Developer](https://developer.ciscospark.com)", { "markdown":true }, function(err, message) {
         if (err) {
             console.log("WARNING: could not post message to room: " + command.message.roomId);
