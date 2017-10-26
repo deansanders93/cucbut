@@ -299,7 +299,11 @@ bot.onCommand("gethelp", function (command) {
 });
 bot.onCommand("links", function (command) {
     spark.createMessage(command.message.roomId, "Here are some useful links that might help you with your work. \n\n" +
-        "- [Devnet](http://cisco.devnet.com)", { "markdown":true }, function(err, message) {
+        "- [Devnet](http://cisco.devnet.com)" +
+        "- [Postman](https://www.getpostman.com/)" +
+        "- [Meraki Postman COllection](http://developers.meraki.com/post/157014824756/dashboard-api-postman-collection)" +
+        "- [Internet of Lego](https://www.internetoflego.com)" +
+        "- [Node Red](https://nodered.org/)", { "markdown":true }, function(err, message) {
         if (err) {
             console.log("WARNING: could not post message to room: " + command.message.roomId);
             return;
