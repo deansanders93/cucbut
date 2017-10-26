@@ -304,7 +304,8 @@ bot.onCommand("links", function (command) {
         "- [Meraki Postman COllection](http://developers.meraki.com/post/157014824756/dashboard-api-postman-collection)" +
         "- [Meraki Spark Room](https://eurl.io/#HJQnd7yRZ)" +
         "- [Internet of Lego](https://www.internetoflego.com)" +
-        "- [Node Red](https://nodered.org/)", { "markdown":true }, function(err, message) {
+        "- [Node Red](https://nodered.org/)" +
+        "- [Cisco Spark Developer](https://developer.ciscospark.com)", { "markdown":true }, function(err, message) {
         if (err) {
             console.log("WARNING: could not post message to room: " + command.message.roomId);
             return;
